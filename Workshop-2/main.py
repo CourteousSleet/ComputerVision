@@ -42,13 +42,13 @@ if __name__ == '__main__':
     sobel_x = np.array([
         [-1, -2, -1],
         [0, 0, 0],
-        [1, 2, 1],
+        [1, 2, 1]
     ])
 
     sobel_y = np.array([
         [-1, 0, 1],
         [-2, 0, 2],
-        [-1, 0, 1],
+        [-1, 0, 1]
     ])
 
     filtered2 = cv2.filter2D(image, -1, kernel, borderType=cv2.BORDER_REFLECT)
